@@ -15,8 +15,5 @@ async function logJSONData() {
   
 
 app.get('/', (req, res) => { 
-
-
-
     
 });
