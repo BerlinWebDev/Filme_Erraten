@@ -19,7 +19,13 @@ function App() {
 
   return (
     <>
-      <div className="text-4xl text-red-100">Hello</div>
+      <div
+        class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
+        role="alert"
+      >
+        <span class="font-medium">Info alert!</span> Change a few things up and
+        try submitting again.
+      </div>
       <NavBar />
       {movies.map((movie) => (
         <p key={movie.id}>{movie?.original_title}</p>
