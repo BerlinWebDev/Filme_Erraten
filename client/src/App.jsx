@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import axios from "axios";
-import { version } from "react";
+import "./index.css";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+      <div className="text-4xl text-red-100">Hello</div>
       <NavBar />
       {movies.map((movie) => (
         <p key={movie.id}>{movie?.original_title}</p>
